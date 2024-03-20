@@ -1,0 +1,61 @@
+.search_icon
+{
+    left: 17px;
+}
+.h_recomend .sh_cart .sh_count
+{
+    right: -7px;
+}
+header .t_lang .i_lang
+{
+    margin-left: 4px;
+}
+.h_recomend
+{
+    margin-left: 15px;
+}
+
+
+
+@media (min-width:992px) and (max-width:1199px)	
+{
+
+}
+
+@media (max-width:991px)	
+{
+
+}
+
+@media (min-width:768px) and (max-width:991px)	
+{
+
+}
+
+
+
+
+
+@media (max-width:767px)	
+{
+    .main_nav
+    {
+        right: 0;
+    }
+    .main_nav .nav_bar
+    {
+        text-align: right;
+    }
+    header .t_lang.sm
+    {
+        right: 20px;
+    }
+    .closebtn
+    {
+        left: 20px;
+    }
+    .h_recomend
+    {
+        margin-left: 0;
+    }
+}

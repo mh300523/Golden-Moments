@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- for internet explorere -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--(the most important line) for mobile first -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <link rel="icon" type="image/png" href="images/favicon.png">
+		<title>Golden-Moments</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+		<link rel="stylesheet" href="css/swiper-bundle.css">
+		<link rel="stylesheet" href="css/all.min.css">
+		<link rel="stylesheet" href="css/linear.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style-ar.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>-->
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+        <script src="js/jquery-2.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/swiper-bundle.js"></script>
+		<script src="js/plug.js"></script>
+	</head>
+	<body>
+         <!-- Start preloader -->
+            <div class="pre-loader">
+              <div class="content">
+                <div class="lds-default">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+         <!-- End preloader -->
+         <div class="over_click"></div>
+         <header>
+             <div class="top_nav">
+                 <div class="container">
+                     <div class="top_bar">
+                        <div class="search_lg">
+                            <div class="searchbox">
+                                <input class="searchinput" id="search" placeholder="عن ماذا تبحث؟" type="search">
+                                <button class="search_icon"type="submit"><span class="lnr lnr-magnifier"></span></button>
+                            </div>
+                        </div>
+                         
+                          <div class="logo">
+                            <a href="#"><img class="img-responsive" src="images/logo.png" alt="logo"></a>
+                          </div>
+                          
+                          <div class="left_side">
+                              <ul class="list-unstyled list-inline ulfix h_recomend">
+                               <li class="mob_navbtn">
+                                    <a id="navbtn" class="re_btn fixanc">
+                                        <span class="lnr lnr-menu"></span>
+                                    </a>
+                                </li>
+                                <li class="srch_sm">
+                                  <a href="#" class="re_btn fixanc" data-toggle="modal" data-target=".over_mod">
+                                        <span class="lnr lnr-magnifier"></span>
+                                  </a>
+                                </li>
+                                <li class="my_account lg dropdown">
+                                    <a class="re_btn dropdown-toggle fixanc" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="lnr lnr-user"></span>
+                                    </a>
+
+                                    <ul class="dropdown-menu ulfix sam_menu">
+                                        <li>
+                                            <a href="#" class="fixanc">تسجيل الدخول</a>
+                                        </li>
+                                        <li><a href="#" class="fixanc">تسجيل جديد</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="fav">
+                                    <a class="re_btn fixanc" href="#">
+                                        <span class="lnr lnr-heart"></span>
+                                    </a>
+                                  </li>
+                                  <li class="sh_cart">
+                                    <a class="re_btn fixanc" href="#">
+                                        <span class="lnr lnr-cart"></span>
+                                        <span class="sh_count">0</span>
+                                    </a>
+                                  </li>
+                              </ul>
+                              <div class="t_lang lg dropdown">
+                                  <a href="index.html" class="dropdown-toggle tl_anc tl_ar fixanc" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <img class="i_lang" src="images/ar.png" alt="language">العربية
+                                   <span class="lnr lnr-chevron-down chev"></span>
+                                  </a>
+                                  <ul class="dropdown-menu sam_menu ulfix">
+                                    <li>
+                                        <a href="index-en.html" class="fixanc tl_en">
+                                            <img class="i_lang" src="images/lang-en.png" alt="language">English
+                                        </a>
+                                    </li>
+                                  </ul>
+                              </div> 
+                          </div>
+                     </div>
+                     <div class="down_bar">
+                         <div class="main_nav">
+                            <span href="#" class="lnr lnr-cross closebtn"></span>
+                            <div class="t_lang sm dropdown">
+                              <a href="index.html" class="dropdown-toggle tl_anc tl_ar fixanc" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <img class="i_lang" src="images/ar.png" alt="language">العربية
+                               <span class="lnr lnr-chevron-down chev"></span>
+                              </a>
+                              <ul class="dropdown-menu sam_menu ulfix">
+                                <li>
+                                    <a href="index-en.html" class="fixanc tl_en">
+                                        <img class="i_lang" src="images/lang-en.png" alt="language">English
+                                    </a>
+                                </li>
+                              </ul>
+                            </div> 
+                             <ul class="nav_bar list-unstyled list-inline ulfix">
+                                <li><a class="fixanc" href="#">الرئيسية</a></li>
+                                <li><a class="fixanc" href="#">المطعم</a></li>
+                                <li><a class="fixanc" href="#">الاكسبريس </a></li>
+                                <li><a class="fixanc" href="#">البيكري </a></li>
+                                <li><a class="fixanc" href="#"> وصل حديثًا  </a></li>
+                                <li><a class="fixanc" href="#">  العروض المميزة  </a></li>
+                                <li><a class="fixanc" href="#">اتصل بنا </a></li>
+                            </ul>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </header>
+         
+        
+         <!--------------- start search modal ---------------->
+            <div class="modal fade over_mod" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="lnr lnr-cross"></span>
+                </button>
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="searchbox">
+                            <input class="searchinput" id="search" placeholder="كلمة البحث" type="search">
+                            <button class="search_icon"type="submit"><span class="lnr lnr-magnifier"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--------------- end search modal ---------------->
+            
+            
+                  <!-- start banners -->
+       <section class="our_bans">
+           <div class="container">
+               <div class="bans_slider sam_slider">
+                     <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="obans">
+                                   <div class="cat_img">
+                                       <a href="#">
+                                           <img src="images/cat1.jpg" class="img-responsive" />
+                                       </a>
+                                   </div>
+                                   <h4 class="cat_name hhfix">
+                                       <a href="#" class="fixanc">المطعم</a>
+                                   </h4>
+                               </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="obans">
+                                   <div class="cat_img">
+                                       <a href="#">
+                                           <img src="images/cat2.jpg" class="img-responsive" />
+                                       </a>
+                                   </div>
+                                   <h4 class="cat_name hhfix">
+                                       <a href="#" class="fixanc"> الفنار اكسبريس </a>
+                                   </h4>
+                               </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="obans">
+                                   <div class="cat_img">
+                                       <a href="#">
+                                           <img src="images/cat3.jpg" class="img-responsive" />
+                                       </a>
+                                   </div>
+                                   <h4 class="cat_name hhfix">
+                                       <a href="#" class="fixanc">  الفنار بيكري </a>
+                                   </h4>
+                               </div>
+                            </div>
+                         </div>
+                         
+                   </div>
+                   <div class="swiper-pagination"></div>
+               </div>
+           </div>
+       </section>
+       <!-- end banners -->
+            
+            <!--------------- start footer ---------------->
+            <footer>
+                <div class="container">
+                    <ul class="foo_social list-unstyled list-inline ulfix">
+                        <li><a href="#" class="fixanc"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#" class="fixanc"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#" class="fixanc"><i class="fab fa-snapchat-ghost"></i></a></li>
+                        <li><a href="#" class="fixanc"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" class="fixanc"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="fixanc"><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
+                    <div class="fopayco">
+                     <div class="ff_rghts">
+                         جميع الحقوق محفوظة، جولدن مومنتس  ©
+                     </div>
+                     <div class="ff_devds">
+                          صنع بكل ال <i class="fas fa-heart"></i>  في <a href="#"><img src="images/tasawk-c-ar.png"></a>
+                     </div>
+                </div>
+                </div>
+            </footer>
+            <!--------------- end footer ---------------->
+        
+        
+    </body>
+</html>
+        
